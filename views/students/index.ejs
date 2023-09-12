@@ -1,0 +1,11 @@
+<%- include('../partials/header') %>
+<h1>List of Students</h1>
+<ul>
+    <% studentArray.forEach(function(student) { %>
+        <li>
+            <%= student.name %>
+            : Grade =
+            <%= student.grade %>
+        </li>
+    <% }) %>
+</ul>

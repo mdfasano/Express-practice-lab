@@ -1,0 +1,11 @@
+<%- include('../partials/header') %>
+    <h1>All To Dos</h1>
+    <ul>
+      <% todoArray.forEach(function(task) { %>
+        <li>
+          <%= task.todo %>
+             -
+          <%= task.done ? 'done' : 'not done' %>
+        </li>
+      <% }); %>
+    </ul>
